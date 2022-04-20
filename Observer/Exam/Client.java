@@ -7,6 +7,7 @@ public class Client {
         LineSource lineSource = new LineSource();
 
         ReceivedResponse receivedResponse = new ReceivedResponse(lineSource);
+        CharacterCount characterCount = new CharacterCount(lineSource);
 
         System.out.println("Enter Text: ");
         Scanner scanner = new Scanner(System.in);
