@@ -6,7 +6,7 @@ package Observer.Exam;
 import java.util.ArrayList;
 
 public class LineSource implements Subject {
-    private String lineSource;
+    private String lineSourceScanner;
     ArrayList<Observer> observers = new ArrayList<Observer>();
 
     public LineSource() {
@@ -23,7 +23,7 @@ public class LineSource implements Subject {
 
     public void notifyObservers() {
         for (Observer observer : observers) {
-            observer.update(lineSource);
+            observer.update(lineSourceScanner);
         }
         System.out.println("");
     }
@@ -32,8 +32,8 @@ public class LineSource implements Subject {
         notifyObservers();
     }
 
-    public void setLineSource(String lineSource) {
-        this.lineSource = lineSource;
+    public void setLineSource(String lineSourceScanner) {
+        this.lineSourceScanner = lineSourceScanner;
         lineSourceChanged();
     }
 }
