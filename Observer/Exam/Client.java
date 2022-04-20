@@ -8,6 +8,7 @@ public class Client {
 
         ReceivedResponse receivedResponse = new ReceivedResponse(lineSource);
         CharacterCount characterCount = new CharacterCount(lineSource);
+        Uppercase uppercase = new Uppercase(lineSource);
 
         System.out.println("Enter Text: ");
         Scanner scanner = new Scanner(System.in);
