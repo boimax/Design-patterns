@@ -1,3 +1,6 @@
+/*
+This example is taken from the SWE Design final exam of previous intake CS2018
+*/
 package Observer.Exam;
 
 import java.util.Scanner;
