@@ -24,6 +24,7 @@ public class WeatherData implements Subject {
         for (Observer observer : observers) {
             observer.update(temperature, humidity, pressure);
         }
+        System.out.println("");
     }
 
     public void measurementsChanged() {
