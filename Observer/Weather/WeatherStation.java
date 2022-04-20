@@ -1,3 +1,6 @@
+/*
+This example is taken from the HeadFirst Design Patterns book.
+*/
 package Observer.Weather;
 
 public class WeatherStation {
