@@ -1,3 +1,6 @@
+/*
+This example is taken from tutoriorpoints, and is also the example showed by Prof Manuel in class
+*/
 package Visitor.ComputerPart;
 
 public class CLient {
