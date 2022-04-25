@@ -1,18 +1,21 @@
 public class GumballMachine {
     State state;
+    State noQuarterState;
+    State hasQuarterState;
+    State soldState;
+    State soldOutState;
     int count = 0;
 
     public GumballMachine(int numberOfBalls) {
-        NoQuarterState noQuarterState = new NoQuarterState(this);
-        HasQuarterState hasQuarterState = new HasQuarterState(this);
-        SoldState soldState = newSoldState(this);
-        SoldOutState soldOutState = newSoldOutState(this);
+        noQuarterState = new NoQuarterState(this);
+        hasQuarterState = new HasQuarterState(this);
+        soldState = new SoldState(this);
+        soldOutState = new SoldOutState(this);
 
         this.count = numberOfBalls;
         if (numberOfBalls > 0) {
             state = noQuarterState;
-        }
-        else {
+        } else {
             state = soldOutState;
         }
     }
@@ -21,7 +24,7 @@ public class GumballMachine {
         state.insertQuarter();
     }
 
-    public void ejectQuarter() {
+    void ejectQuarter() {
         state.ejectQuarter();
     }
 
@@ -34,20 +37,20 @@ public class GumballMachine {
         this.state = state;
     }
 
-    GumballMachine getNoQuarterState() {
+    public State getNoQuarterState() {
         return noQuarterState;
     }
 
-    GumballMachine getHasQuarterState() {
+    public State getHasQuarterState() {
         return hasQuarterState;
     }
 
-    GumballMachine getSoldState() {
-        return SoldState;
+    public State getSoldState() {
+        return soldState;
     }
 
-    GumballMachine getSoldOutState() {
-        return SoldOutState;
+    public State getSoldOutState() {
+        return soldOutState;
     }
 
     public void releaseaBall() {
@@ -62,15 +65,15 @@ public class GumballMachine {
     }
 
     public String toString() {
-		StringBuffer result = new StringBuffer();
-		result.append("\nMighty Gumball, Inc.");
-		result.append("\nJava-enabled Standing Gumball Model #2004");
-		result.append("\nInventory: " + count + " gumball");
-		if (count != 1) {
-			result.append("s");
-		}
-		result.append("\n");
-		result.append("Machine is " + state + "\n");
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer();
+        result.append("\nMighty Gumball, Inc.");
+        result.append("\nJava-enabled Standing Gumball Model #2004");
+        result.append("\nInventory: " + count + " gumball");
+        if (count != 1) {
+            result.append("s");
+        }
+        result.append("\n");
+        result.append("Machine is " + state + "\n");
+        return result.toString();
+    }
 }
