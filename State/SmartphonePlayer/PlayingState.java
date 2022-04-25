@@ -9,6 +9,7 @@ public class PlayingState implements State {
     public void onLock() {
         // TODO Auto-generated method stub
         player.setState(player.getLockState());
+        player.setCurrentTrackAfterLocked();
         System.out.println("Stop playing, changed to Locked state!");
     }
 

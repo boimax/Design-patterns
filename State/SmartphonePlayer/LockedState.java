@@ -8,7 +8,7 @@ public class LockedState implements State {
     @Override
     public void onLock() {
         // TODO Auto-generated method stub
-        if (player.getState() = PlayingState) {
+        if (player.getState() == PlayingState) {
             System.out.println("Stop Playing");
             player.setState(player.getReadyState());
         } else {
