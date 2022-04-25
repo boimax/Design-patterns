@@ -53,15 +53,15 @@ public class GumballMachine {
         return soldOutState;
     }
 
+    int getCount() {
+        return count;
+    }
+
     public void releaseaBall() {
         System.out.println("A gumball comes rolling out the slot...");
         if (count > 0) {
             count = count - 1;
         }
-    }
-
-    int getCount() {
-        return count;
     }
 
     public String toString() {
