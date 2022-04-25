@@ -19,8 +19,9 @@ public class Player {
         for (int i = 1; i <= numberOfTracks; i++) {
             playlist.add("Track " + i);
         }
-        if (currentTrack > 0) {
+        if (numberOfTracks > 0) {
             state = ReadyState;
+            currentTrack = 1;
         } else {
             state = LockedState;
         }
@@ -35,7 +36,7 @@ public class Player {
         if (currentTrack > playlist.size()) {
             currentTrack = 1;
         }
-        System.out.println("Playing Track " + playlist.get(currentTrack));
+        System.out.println("Playing " + playlist.get(currentTrack));
     }
 
     public void previousTrack() {
@@ -43,7 +44,7 @@ public class Player {
         if (currentTrack < 1) {
             currentTrack = playlist.size();
         }
-        System.out.println("Playing Track " + playlist.get(currentTrack));
+        System.out.println("Playing " + playlist.get(currentTrack));
     }
 
     public void setCurrentTrackAfterLocked() {
@@ -84,5 +85,13 @@ public class Player {
 
     public State getPlayingState() {
         return PlayingState;
+    }
+
+    public String toString() {
+        StringBuffer result = new StringBuffer();
+        result.append("\nJava-enabled SmartphonePlayer 2022");
+        result.append("\n");
+        result.append("The player is " + state + "\n");
+        return result.toString();
     }
 }

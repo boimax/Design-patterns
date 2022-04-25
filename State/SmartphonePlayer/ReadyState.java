@@ -7,8 +7,8 @@ public class ReadyState implements State {
 
     @Override
     public void onLock() {
-        player.setState(player.getLockState());
         System.out.println("Changed from Ready to Locked!");
+        player.setState(player.getLockState());
     }
 
     @Override
@@ -18,8 +18,8 @@ public class ReadyState implements State {
 
     @Override
     public void onPlay() {
-        player.setState(player.getPlayingState());
         System.out.println("The player is playing!");
+        player.setState(player.getPlayingState());
     }
 
     @Override

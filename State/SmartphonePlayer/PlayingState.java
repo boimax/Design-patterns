@@ -7,9 +7,9 @@ public class PlayingState implements State {
 
     @Override
     public void onLock() {
+        System.out.println("Stop playing, changed to Locked state!");
         player.setState(player.getLockState());
         player.setCurrentTrackAfterLocked();
-        System.out.println("Stop playing, changed to Locked state!");
     }
 
     @Override
