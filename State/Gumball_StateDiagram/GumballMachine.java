@@ -1,3 +1,7 @@
+/*
+This is the Context that is the class that can have a number of internal states.
+Whenever the request() is made on the Context it is delegated to the state to handle
+*/
 public class GumballMachine {
     State state;
     State noQuarterState;
