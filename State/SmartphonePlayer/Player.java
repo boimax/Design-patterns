@@ -13,12 +13,16 @@ public class Player {
     private int currentTrack = 0;
 
     public Player(int numberOfTracks) {
-        state = ReadyState;
         LockedState = new LockedState(this);
         PlayingState = new PlayingState(this);
         ReadyState = new ReadyState(this);
         for (int i = 1; i <= numberOfTracks; i++) {
             playlist.add("Track " + i);
+        }
+        if (currentTrack > 0) {
+            state = ReadyState;
+        } else {
+            state = LockedState;
         }
     }
 
@@ -31,7 +35,7 @@ public class Player {
         if (currentTrack > playlist.size()) {
             currentTrack = 1;
         }
-        System.out.println("Playing Track " + currentTrack);
+        System.out.println("Playing Track " + playlist.get(currentTrack));
     }
 
     public void previousTrack() {
@@ -39,7 +43,7 @@ public class Player {
         if (currentTrack < 1) {
             currentTrack = playlist.size();
         }
-        System.out.println("Playing Track " + currentTrack);
+        System.out.println("Playing Track " + playlist.get(currentTrack));
     }
 
     public void setCurrentTrackAfterLocked() {
