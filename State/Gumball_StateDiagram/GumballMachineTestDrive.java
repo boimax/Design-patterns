@@ -1,3 +1,6 @@
+/*
+This example is taken from Chapter 10: State pattern, HeadFirst Design Patterns book.
+*/
 public class GumballMachineTestDrive {
     public static void main(String[] args) {
         GumballMachine gumballMachine = new GumballMachine(5);
