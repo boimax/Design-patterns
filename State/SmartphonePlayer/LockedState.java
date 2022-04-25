@@ -7,8 +7,7 @@ public class LockedState implements State {
 
     @Override
     public void onLock() {
-        // TODO Auto-generated method stub
-        if (player.getState() == PlayingState) {
+        if (player.getState() == player.getPlayingState()) {
             System.out.println("Stop Playing");
             player.setState(player.getReadyState());
         } else {
@@ -18,20 +17,17 @@ public class LockedState implements State {
 
     @Override
     public void onNext() {
-        // TODO Auto-generated method stub
         System.out.println("Cannot onNext because of being locked :'(");
     }
 
     @Override
     public void onPlay() {// Unlock
-        // TODO Auto-generated method stub
         player.setState(player.getReadyState());
         System.out.println("Ready");
     }
 
     @Override
     public void onPrevious() {
-        // TODO Auto-generated method stub
         System.out.println("Cannot onPrevious because of being locked :'(");
     }
 
