@@ -8,5 +8,6 @@ public class Client {
         player.onNext();
         player.onPrevious();
         player.onLock();
+        player.onNext();
     }
 }
