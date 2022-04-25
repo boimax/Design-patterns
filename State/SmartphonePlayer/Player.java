@@ -17,7 +17,7 @@ public class Player {
         PlayingState = new PlayingState(this);
         ReadyState = new ReadyState(this);
         for (int i = 1; i <= numberOfTracks; i++) {
-            playlist.add("Track " + i);
+            playlist.add("Track " + (i - 1));
         }
         if (numberOfTracks > 0) {
             state = ReadyState;
