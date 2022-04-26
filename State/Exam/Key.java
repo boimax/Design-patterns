@@ -7,10 +7,6 @@ public enum Key {
 
     }
 
-    Key(String value) {
-        this.value = value;
-    }
-
     public String getvalue() {
         return value;
     }
