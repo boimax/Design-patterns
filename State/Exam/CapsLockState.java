@@ -7,7 +7,7 @@ public class CapsLockState implements State {
                 System.out.println("CapsLockState OFF");
                 break;
             default:
-                System.out.printl(keyboard.getvalue()).toUpperCase());
+                System.out.println(key.getvalue().toUpperCase());
         }
     }
 

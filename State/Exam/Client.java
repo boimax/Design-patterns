@@ -4,6 +4,9 @@ public class Client {
 
         System.out.println("Testing with Capslock ON adn OFF");
         keyboard.tap(Key.Q);
-        keyboard.tap(Key.)
+        keyboard.tap(Key.CAPSLOCK);
+        keyboard.tap(Key.Q);
+        keyboard.tap(Key.CAPSLOCK);
+        keyboard.tap(Key.Q);
     }
 }
