@@ -1,3 +1,6 @@
+/*
+This is the factory that can create concrete objects without using new() in main
+*/
 public class ShapeFactory {
     public Shape getShape(String shapeType) {
         if (shapeType == null) {
