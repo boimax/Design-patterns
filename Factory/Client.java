@@ -1,3 +1,6 @@
+/*
+This example is taken from Tutorpoints.com and also the example in class
+*/
 public class Client {
     public static void main(String[] args) {
         ShapeFactory shapeFactory = new ShapeFactory();
