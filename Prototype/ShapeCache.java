@@ -1,3 +1,8 @@
+
+/*
+Create a class to get concrete classes from database and store them in a HashMap. Like the factory, but 
+already created objects and saved them in HashMap
+*/
 import java.util.HashMap;
 
 public class ShapeCache {
