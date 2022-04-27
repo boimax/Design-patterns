@@ -13,7 +13,7 @@ public class Android implements MicroUSBPhone {
             System.out.println("Recharge started");
             System.out.println("Recharge finished");
         } else {
-            System.out.println("Please Connect MicroUSB first");
+            System.out.println("Please Connect to MicroUSB first");
         }
     }
 
