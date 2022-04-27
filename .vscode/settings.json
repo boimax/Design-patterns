@@ -1,5 +1,6 @@
 {
  "java.project.sourcePaths": [
-    "Factory/Simple Example"
+    "Factory/Simple Example",
+    "Singleton/ExamConnection"
 ]
 }

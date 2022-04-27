@@ -8,7 +8,7 @@ REMEMBER: 3 important things
 import java.time.LocalTime;
 
 public class LazySingletonConnection {
-    LocalTime createdAt;
+    private LocalTime createdAt;
 
     private LazySingletonConnection() {
         LocalTime time = LocalTime.now();
