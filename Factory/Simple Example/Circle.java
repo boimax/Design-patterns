@@ -1,7 +1,5 @@
 public class Circle implements Shape {
-
-    @Override
-    public void draw() {
+    public Circle() {
         System.out.println("Circle");
     }
 

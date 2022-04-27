@@ -1,6 +1,5 @@
 public class Square implements Shape {
-    @Override
-    public void draw() {
+    public Square() {
         System.out.println("Square");
     }
 
