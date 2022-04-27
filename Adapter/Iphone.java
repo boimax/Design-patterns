@@ -1,5 +1,5 @@
 public class Iphone implements LightningPhone {
-    private boolean connector;
+    private boolean connector = false;
 
     @Override
     public void useLightning() { // just connect to Lightning
