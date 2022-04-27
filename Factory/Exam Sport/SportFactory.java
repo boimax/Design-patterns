@@ -1,5 +1,5 @@
 public class SportFactory {
-    public Sport getSport(String SportType) {
+    public static Sport getSport(String SportType) {
         switch (SportType) {
             case "Badminton":
                 return new Badminton();
