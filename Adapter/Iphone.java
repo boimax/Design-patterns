@@ -2,7 +2,7 @@ public class Iphone implements LightningPhone {
     private boolean connector;
 
     @Override
-    public void useLightning() { // just connect Lightning
+    public void useLightning() { // just connect to Lightning
         connector = true;
         System.out.println("Lightning connected");
     }
