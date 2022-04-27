@@ -1,3 +1,10 @@
+
+/*
+REMEMBER: 3 important things 
+1. PRIVATE constructor
+2. PRIVATE STATIC instance
+3. PUBLIC STATIC method getInstance()
+*/
 import java.time.LocalTime;
 
 public class LazySingletonConnection {
