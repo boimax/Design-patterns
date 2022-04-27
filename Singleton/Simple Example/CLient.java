@@ -1,4 +1,4 @@
-public class CLient {
+public class Client {
     public static void main(String[] args) {
         LazySingleton lazy1 = LazySingleton.getInstance();
         LazySingleton lazy2 = LazySingleton.getInstance();
