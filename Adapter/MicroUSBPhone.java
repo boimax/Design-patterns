@@ -1,3 +1,4 @@
+//Adaptee interface 2
 public interface MicroUSBPhone {
     public void recharge();
 
