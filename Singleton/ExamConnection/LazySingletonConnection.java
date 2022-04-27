@@ -17,7 +17,7 @@ public class LazySingletonConnection {
                 + this.createdAt);
     }
 
-    private static LazySingletonConnection connection;
+    private static LazySingletonConnection connection; // connection = instance
 
     public static LazySingletonConnection getConnection() {
         if (connection == null) {
