@@ -1,6 +1,6 @@
 {
  "java.project.sourcePaths": [
     "Factory/Simple Example",
-    "Singleton/ExamConnection"
+    "Adapter"
 ]
 }
