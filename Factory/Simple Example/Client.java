@@ -3,13 +3,8 @@ This example is taken from Tutorpoints.com and also the example in class
 */
 public class Client {
     public static void main(String[] args) {
-        ShapeFactory shapeFactory = new ShapeFactory();
-        Shape shape1 = shapeFactory.getShape("CIRCLE");
-        Shape shape2 = shapeFactory.getShape("SQUARE");
-        Shape shape3 = shapeFactory.getShape("RECTANGLE");
-
-        shape1.draw();
-        shape2.draw();
-        shape3.draw();
+        Shape Circle = ShapeFactory.getShape("Circle");
+        Shape Square = ShapeFactory.getShape("Square");
+        Shape Rectangle = ShapeFactory.getShape("Rectangle");
     }
 }
