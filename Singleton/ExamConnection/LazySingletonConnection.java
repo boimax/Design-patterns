@@ -1,6 +1,6 @@
 
 /*
-REMEMBER: 3 important things 
+REMEMBER: 3 important things of SINGLETON
 1. PRIVATE constructor
 2. PRIVATE STATIC instance
 3. PUBLIC STATIC method getInstance()
