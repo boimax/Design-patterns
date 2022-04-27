@@ -1,17 +1,18 @@
-/*
+/* NOTE:
 This is the factory that can create concrete objects without using new() in main
+We SHOULD set method 'getShape' STATIC to direclty access it in client without initializing new ShapeFactory()
 */
 public class ShapeFactory {
-    public Shape getShape(String shapeType) {
-        if (shapeType == null) {
-            return null;
-        } else if (shapeType.equalsIgnoreCase("CIRCLE")) {
-            return new Circle();
-        } else if (shapeType.equalsIgnoreCase("SQUARE")) {
-            return new Square();
-        } else if (shapeType.equalsIgnoreCase("RECTANGLE")) {
-            return new Rectangle();
+    public static Shape getShape(String shapeType) {
+        switch (shapeType) {
+            case "Circle":
+                return new Circle();
+            case "Square":
+                return new Square();
+            case "Rectangle":
+                return new Rectangle();
+            default:
+                throw new IllegalArgumentException("Shape not found");
         }
-        return null;
     }
 }
