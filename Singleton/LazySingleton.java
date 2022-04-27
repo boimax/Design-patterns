@@ -12,7 +12,7 @@ public class LazySingleton {
 
     private static LazySingleton instance; // private static variable
 
-    private static LazySingleton getInstance() {
+    public static LazySingleton getInstance() {
         if (instance == null) {
             instance = new LazySingleton();
         }
