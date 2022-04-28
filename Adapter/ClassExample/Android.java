@@ -8,7 +8,7 @@ public class Android implements MicroUSBPhone {
     }
 
     @Override
-    public void recharge() {// charge
+    public void recharge() {// then charge
         if (connector) {
             System.out.println("Recharge started");
             System.out.println("Recharge finished");
