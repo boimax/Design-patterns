@@ -2,7 +2,7 @@ public class TPBank extends Bank {
     Account account;
 
     public TPBank(Account account) {
-        this.account = account;
+        super(account);
     }
 
     @Override

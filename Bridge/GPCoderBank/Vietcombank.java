@@ -2,7 +2,7 @@ public class Vietcombank extends Bank {
     Account account;
 
     public Vietcombank(Account account) {
-        this.account = account;
+        super(account);
     }
 
     @Override
