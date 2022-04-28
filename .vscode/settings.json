@@ -1,6 +1,5 @@
 {
  "java.project.sourcePaths": [
-    "Factory/Simple Example",
-    "Adapter"
+    "Adapter/ClassExample"
 ]
 }
