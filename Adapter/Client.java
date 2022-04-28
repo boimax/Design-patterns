@@ -15,7 +15,7 @@ public class Client {
         Android android = new Android();
         Huawei huawei = new Huawei();
 
-        // rechange normal
+        // recharge normally
         System.out.println("=============Recharge Lightning phone================");
         rechargeLightningPhone(iphone);
         System.out.println("============Recharge MicroUSB phone============");
