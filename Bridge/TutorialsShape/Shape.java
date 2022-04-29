@@ -5,6 +5,9 @@ public abstract class Shape {
      */
     protected DrawAPI drawAPI;
 
+    /*
+     * Chỉ build constructor trong classes of abstract, k cần trong implement
+     */
     public Shape(DrawAPI drawAPI) {
         this.drawAPI = drawAPI;
     }

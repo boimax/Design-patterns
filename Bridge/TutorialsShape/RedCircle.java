@@ -1,7 +1,5 @@
 public class RedCircle implements DrawAPI {
-
-    public RedCircle() {
-    }
+    // Do not need to build constructor here. It is built by default
 
     @Override
     public void drawCircle() {
