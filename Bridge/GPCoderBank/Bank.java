@@ -1,7 +1,7 @@
 public abstract class Bank {
-    protected Account account;
+    protected Account account; // protected: to be used again in child classes: Vietcombank & TPBank
 
-    public Bank(Account account) {
+    public Bank(Account account) { // HAS -A
         this.account = account;
     }
 

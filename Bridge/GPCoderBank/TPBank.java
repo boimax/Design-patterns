@@ -1,6 +1,4 @@
 public class TPBank extends Bank {
-    Account account;
-
     public TPBank(Account account) {
         super(account);
     }
