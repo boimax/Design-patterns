@@ -15,6 +15,6 @@ public class Client {
         // Access vào thằng con thì phải gọi method của thằng con.
 
         Bank tpbank = new TPBank(new SavingAccount());
-        tpbank.openAccount();
+        tpbank.openAccount();// call to openAccount() of SavingAccount class.
     }
 }
