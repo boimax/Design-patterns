@@ -11,6 +11,6 @@ NOTE: This example is taken from GPCOder
 public class Client {
     public static void main(String[] args) {
         ShopFacade.getInstance().buyProductByCashWithFreeShipping("hocattuong2404@gmail.com");
-        ShopFacade.getInstance().buyProductByPaypalWithStandardShipping("nnthuytien@gmail.com", "0969359167");
+        ShopFacade.getInstance().buyProductByPaypalWithStandardShipping("nnthuytien@gmail.com", "0999361567");
     }
 }
