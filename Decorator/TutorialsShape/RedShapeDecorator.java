@@ -7,7 +7,7 @@ public class RedShapeDecorator extends ShapeDecorator {
     @Override
     public void draw() {
         shape.draw();
-        System.out.print(" Red");
+        System.out.print("With Red ");
     }
 
 }
