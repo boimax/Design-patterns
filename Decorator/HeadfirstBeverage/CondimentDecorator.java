@@ -1,3 +1,7 @@
+/**
+ * NOTE:
+ * Decorator class MUST EXTENDS + USES component class
+ */
 public abstract class CondimentDecorator extends Beverage {
     /**
      * 1 ly coffe đã có topping Milk, muốn decorate thêm topping Mocha, thì
