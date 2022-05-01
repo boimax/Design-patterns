@@ -1,12 +1,11 @@
 /**
  * This is Component class
  */
-public abstract class Window {
-    String description;
+public interface Window {
 
-    public String getDescription() {
-        return description;
-    }
+    public String getDescription();
 
-    public abstract String draw();
+    void setDescription(String description);
+
+    public void draw();
 }

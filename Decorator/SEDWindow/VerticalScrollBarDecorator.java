@@ -1,11 +1,21 @@
 public class VerticalScrollBarDecorator extends WindowDecorator {
     public VerticalScrollBarDecorator(Window window) {
-        this.window = window;
+        super(window);
+    }
+
+    private void drawVerticalScrollBar() {
+        super.setDescription(super.getDescription() + " vertical scrollbar");
     }
 
     @Override
-    public String draw() {
-        return window.draw() + " decorated with Vertical Scroll Bar";
+    public void draw() {
+        drawVerticalScrollBar();
+        super.draw();
+    }
+
+    @Override
+    public String getDescription() {
+        return super.getDescription();
     }
 
 }
