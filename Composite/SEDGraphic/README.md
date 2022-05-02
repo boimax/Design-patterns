@@ -1,0 +1,4 @@
+- **GRAPHICCOMPONENT**: is interface
+- **CLIENT**: client
+- **ECLIPSE+RECTANGLE**: leaf
+- **GRAPHICCOMPOSITE**: composite object
