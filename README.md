@@ -7,19 +7,19 @@ This is the place where I can perform many interesting examples applied design p
 - **Factory**
 - **Singleton**
 - Builder
-- Prototype.
+- Prototype
 
 **2. STRUCTURAL:**
 
-- **Adapter**,
-- **Composite**,
-- **Decorator**,
-- Bridge,
-- Facade.
+- **Adapter**
+- **Composite**
+- **Decorator**
+- Bridge
+- Facade
 
 **3. BEHAVIOURAL:**
 
-- **Observer**,
-- **State**,
-- Iterator,
-- Visitor.
+- **Observer**
+- **State**
+- Iterator
+- Visitor
