@@ -1,0 +1,5 @@
+- **Order**: product
+- **Client**: client uses Order
+- **OrderBuilder**: interface builder
+- **OneCourseMealBuilder**: 1st concrete builder, implements OrderBuilder
+- **NoSaltOneCourseMealBuilder**: 2nd concrete builder, implements OrderBuilder
