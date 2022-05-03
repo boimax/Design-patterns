@@ -1,0 +1,4 @@
+- **GAME**: abstract class/ component
+- **CLIENT**: client
+- **LEAFGAME**: leaf
+- **BRANCHGAME**: composite object
