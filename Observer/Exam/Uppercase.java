@@ -1,4 +1,3 @@
-package Observer.Exam;
 
 public class Uppercase implements Observer, DisplayMethod {
     private String lineSourceScanner;

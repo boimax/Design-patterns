@@ -1,0 +1,4 @@
+- **KEYBOARD**: context
+- **STATE**: interface
+- **CAPSLOCKSTATE**: 1st concrete state
+- **NORMALSTATE**: 2nd concrete state

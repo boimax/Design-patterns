@@ -1,4 +1,3 @@
-package Observer.Exam;
 
 public class CharacterCount implements Observer, DisplayMethod {
     private String lineSourceScanner;

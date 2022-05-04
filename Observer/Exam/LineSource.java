@@ -1,7 +1,6 @@
 /*
 This is the 1st concrete subject
 */
-package Observer.Exam;
 
 import java.util.ArrayList;
 

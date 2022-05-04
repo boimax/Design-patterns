@@ -1,4 +1,3 @@
-package Observer.Exam;
 
 public interface Subject {
     public void addObserver(Observer observer);

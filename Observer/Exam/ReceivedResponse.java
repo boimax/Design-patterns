@@ -2,8 +2,6 @@
 This is 1st Observer 
 */
 
-package Observer.Exam;
-
 public class ReceivedResponse implements Observer, DisplayMethod {
     private String lineSourceScanner;
     private Subject lineSource;
