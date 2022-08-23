@@ -1,23 +1,23 @@
-/*
-This example is taken from the SWE Design final exam of previous intake CS2018
-*/
 
-import java.util.Scanner;
-
+/**
+ * This is more advance cause Observer can choose when it ready to be attached
+ * to Service
+ * => Client dont need to add Observer to the Service
+ * Client only need to create the Observer and it will be automaticaly add to
+ * Service when it is ready
+ */
 public class Client {
     public static void main(String[] args) {
-        LineSource lineSource = new LineSource();
+        // Creating the service
+        LineSourceService service = new ConcreteLineSourceService();
 
-        ReceivedResponse receivedResponse = new ReceivedResponse(lineSource);
-        CharacterCount characterCount = new CharacterCount(lineSource);
-        Uppercase uppercase = new Uppercase(lineSource);
+        // Create the Observer and let them decide when it ready to attach into the
+        // Service
+        new RecieveObserver(service);
+        new CountObserver(service);
+        new UpperObserver(service);
 
-        System.out.println("Enter Text: ");
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextLine()) {
-            String lineSourceScanner = scanner.nextLine();
-            lineSource.setLineSource(lineSourceScanner);
-        }
-        scanner.close();
+        // start the service
+        service.startProc();
     }
 }
