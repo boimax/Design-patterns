@@ -46,11 +46,11 @@ public class DocumentApp {
     static class DocumentContext {
         State state;
 
-        public void setState(State state) { // MOST IMPORTANT
+        public void setState(State state) { // MOST IMPORTANT 1
             this.state = state;
         }
 
-        public void applyState() {
+        public void applyState() { // MOST IMPORTANT 2
             state.handleRequest();
         }
     }
