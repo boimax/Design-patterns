@@ -50,7 +50,7 @@ public class DocumentApp {
             this.state = state;
         }
 
-        public void applyState() { // MOST IMPORTANT 2
+        public void handleRequest() { // MOST IMPORTANT 2
             state.handleRequest();
         }
     }
@@ -58,15 +58,16 @@ public class DocumentApp {
     public static void main(String[] args) {
         DocumentContext context = new DocumentContext();
         context.setState(new NewState());
-        context.applyState();
+        context.handleRequest();
 
         context.setState(new SubmittedState());
-        context.applyState();
+        context.handleRequest();
 
         context.setState(new ApprovedState());
-        context.applyState();
+        context.handleRequest();
 
         context.setState(new RejectedState());
-        context.applyState();
+        context.handleRequest();
+
     }
 }
