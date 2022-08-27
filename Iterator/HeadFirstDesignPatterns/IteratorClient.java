@@ -16,7 +16,7 @@ public class IteratorClient {
         // NOT NEED CURRENT() AS NEXT() WILL RETURN CURRENT ITEMS[POSITION]
         public boolean hasNext();
 
-        public String next();
+        public String next(); // BECAUSE INPUT VALUE INTO LIST + ARRAYLIST: STRING
     }
 
     static class DinerMenuConcreteIterator implements Iterator {
