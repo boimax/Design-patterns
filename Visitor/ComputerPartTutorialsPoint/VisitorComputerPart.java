@@ -32,28 +32,29 @@ public class VisitorComputerPart {
         public void visit(Monitor monitor);
     }
 
-    static class ComputerPartDisplayVisitor implements ComputerPartVisitor {
+    static class ComputerPartDisplayConcreteVisitor implements ComputerPartVisitor { // 1 CONCRETE VISITOR => 1
+                                                                                     // OPERATION
 
         @Override
-        public void visit(Computer computer) { // OPERATION
+        public void visit(Computer computer) {
 
             System.out.println("Displaying Computer.");
         }
 
         @Override
-        public void visit(Mouse mouse) { // OPERATION
+        public void visit(Mouse mouse) {
 
             System.out.println("Displaying Mouse.");
         }
 
         @Override
-        public void visit(Keyboard keyboard) { // OPERATION
+        public void visit(Keyboard keyboard) {
 
             System.out.println("Displaying Keyboard.");
         }
 
         @Override
-        public void visit(Monitor monitor) { // OPERATION
+        public void visit(Monitor monitor) {
 
             System.out.println("Displaying Monitor.");
         }
@@ -124,6 +125,6 @@ public class VisitorComputerPart {
                                                  * MOST IMPORTANT: computer = monitor + mouse + keyboard => new Computer
                                                  * () = new Mouse() + new Keyboard() + new Monitor()
                                                  */
-        computer.accept(new ComputerPartDisplayVisitor()); // call accept() of concrete visitors
+        computer.accept(new ComputerPartDisplayConcreteVisitor()); // call accept() of concrete visitors
     }
 }
