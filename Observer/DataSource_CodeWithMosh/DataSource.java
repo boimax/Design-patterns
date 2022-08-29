@@ -1,6 +1,12 @@
 
 /*
  * This example is taken from codewithmosh.com 
+ * 5 MAIN PARTS: 
+ * - abstract class Subject (attach, detach, notify)
+ * - concrete Subject: => can add additional function into this class like startProc() in ExamCS2019
+ * - interface Observer (update)
+ * - concrete Observer
+ * - Client (concrete Subject, concrete Observer)
  */
 import java.util.ArrayList;
 import java.util.List;
