@@ -1,3 +1,11 @@
+/*
+ * 4 MAIN PARTS: 
+ * - Context: setState() + handleRequest()
+ * - interface State: handleRequest()
+ * - concrete State: handleRequest()
+ * - client: just use context to setState and do handleRequest()
+ * *** IN SOME CASES => NEED TO NOTICE TO SET DEFAULT STATE AT THE BEGINNING LIKE IN THE STATE PROBLEM EXAMCS2018
+ */
 public class DocumentApp {
     public interface State {
         void handleRequest();

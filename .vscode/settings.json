@@ -2,7 +2,6 @@
  "java.project.sourcePaths": [
     "Visitor/ComputerPartTutorialsPoint",
     "State/GPCoder",
-    "Iterator/HeadFirstDesignPatterns",
-    "Observer/DataSource_CodeWithMosh"
+    "Iterator/HeadFirstDesignPatterns"
 ]
 }
