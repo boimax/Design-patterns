@@ -1,7 +1,6 @@
 {
  "java.project.sourcePaths": [
     "Visitor/ComputerPartTutorialsPoint",
-    "State/GPCoder",
-    "Iterator/HeadFirstDesignPatterns"
+    "State/GPCoder"
 ]
 }

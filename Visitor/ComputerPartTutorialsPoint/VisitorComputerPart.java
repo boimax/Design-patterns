@@ -111,20 +111,28 @@ public class VisitorComputerPart {
         @Override
         public void accept(ComputerPartVisitor computerPartVisitor) {
 
-            for (ComputerPart part : parts) { // force 3 elements: Monitor, Mouse, Keyboard to accept visit() method
+            for (ComputerPart part : parts) { // force 3 elements: Monitor, Mouse, Keyboard to accept concrete visitor:
+                                              // ComputerPartDisplayConcreteVisitor()
                 part.accept(computerPartVisitor);
             }
-            computerPartVisitor.visit(this); // computer accept visit() => 4 elements accept visit()
+            computerPartVisitor.visit(this); // concrete visitor: ComputerPartDisplayConcreteVisitor() calls visit()
+                                             // method of computer
         }
 
     }
 
     public static void main(String[] args) {
         ComputerPart computer = new Computer(); /*
+                                                 * 
                                                  * ComputerPart: interface
                                                  * MOST IMPORTANT: computer = monitor + mouse + keyboard => new Computer
                                                  * () = new Mouse() + new Keyboard() + new Monitor()
                                                  */
+        /*
+         * + interface Element = new concrete Element()
+         * + interface Visitor = new concrete Visitor()
+         * + concrete element.accept(concrete visitor)
+         */
         computer.accept(new ComputerPartDisplayConcreteVisitor()); // call accept() of concrete visitors
     }
 }
