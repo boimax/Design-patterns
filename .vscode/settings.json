@@ -1,6 +1,7 @@
 {
  "java.project.sourcePaths": [
     "Visitor/ComputerPartTutorialsPoint",
-    "State/GPCoder"
+    "State/GPCoder",
+    "Prototype/ColorGeeksForGeeks"
 ]
 }
