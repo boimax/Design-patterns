@@ -2,6 +2,6 @@
  "java.project.sourcePaths": [
     "Visitor/ComputerPartTutorialsPoint",
     "State/GPCoder",
-    "Prototype/ShapeTutorials"
+    "Singleton/SimpleExample"
 ]
 }
