@@ -2,6 +2,7 @@
  "java.project.sourcePaths": [
     "Visitor/ComputerPartTutorialsPoint",
     "State/GPCoder",
-    "Adapter/VivloGraph"
+    "Adapter/VivloGraph",
+    "Decorator/Viblo"
 ]
 }
