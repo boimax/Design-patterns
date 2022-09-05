@@ -5,6 +5,6 @@
     "Decorator/Viblo",
     "Decorator/ExamCS2019",
     "Adapter/VivloGraph",
-    "Facade/TutorialsShape"
+    "Visitor/ExamCS2019"
 ]
 }
