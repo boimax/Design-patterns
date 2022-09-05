@@ -3,7 +3,8 @@
     "Visitor/ComputerPartTutorialsPoint",
     "State/GPCoder",
     "Decorator/Viblo",
+    "Decorator/ExamCS2019",
     "Adapter/VivloGraph",
-    "Decorator/ExamCS2019"
+    "Facade/TutorialsShape"
 ]
 }
