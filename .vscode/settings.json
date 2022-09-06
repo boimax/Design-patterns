@@ -1,10 +1,12 @@
 {
  "java.project.sourcePaths": [
+    "Visitor/ExamCS2019",
     "Visitor/ComputerPartTutorialsPoint",
     "State/GPCoder",
     "Decorator/Viblo",
     "Decorator/ExamCS2019",
+    "Composite/SEDTournament",
     "Adapter/VivloGraph",
-    "Visitor/ExamCS2019"
+    "Composite/SEDGraphic"
 ]
 }
