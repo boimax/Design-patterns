@@ -5,7 +5,7 @@
     "State/GPCoder",
     "Decorator/Viblo",
     "Decorator/ExamCS2019",
-    "Composite/SEDTournament",
-    "Adapter/VivloGraph"
+    "Adapter/VivloGraph",
+    "Bridge/GPCoderBank"
 ]
 }
