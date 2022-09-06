@@ -6,7 +6,6 @@
     "Decorator/Viblo",
     "Decorator/ExamCS2019",
     "Composite/SEDTournament",
-    "Adapter/VivloGraph",
-    "Composite/SEDGraphic"
+    "Adapter/VivloGraph"
 ]
 }
