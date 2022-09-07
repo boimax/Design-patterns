@@ -40,6 +40,10 @@ public class PizzaDecoratorPattern {
         Pizza pizza; // INTERFACE + COMPOSITION: has old pizza inside decorator class to be ready for
                      // being decorated with new features MOST IMPORTANT 1
 
+        public PizzaDecorator(Pizza pizza) {
+            this.pizza = pizza;
+        }
+
         @Override
         public String doPizza() { // doPizza before being decorated
             return pizza.doPizza();
@@ -50,8 +54,8 @@ public class PizzaDecoratorPattern {
     static class PepperDecorator extends PizzaDecorator {
         public PepperDecorator(Pizza pizza) { // MOST IMPORTANT 2: Constructor to put decorated Pizza to decorate with
                                               // new properties
-            this.pizza = pizza; // Put into pizza at PizzaDecorator class to make it run doPizza() before being
-                                // decorated with new taste
+            super(pizza); // Put into pizza at PizzaDecorator class to make it run doPizza() before being
+                          // decorated with new taste
         }
 
         @Override
@@ -64,7 +68,7 @@ public class PizzaDecoratorPattern {
 
     static class CheeseDecorator extends PizzaDecorator {
         public CheeseDecorator(Pizza pizza) {
-            this.pizza = pizza;
+            super(pizza);
         }
 
         @Override

@@ -3,9 +3,12 @@
     "Visitor/ExamCS2019",
     "Visitor/ComputerPartTutorialsPoint",
     "State/GPCoder",
+    "Singleton/ExamConnection",
+    "Facade/GPcoderShop",
     "Decorator/Viblo",
     "Decorator/ExamCS2019",
+    "Builder/GPCoderOrder",
     "Adapter/VivloGraph",
-    "Builder/GPCoderOrder"
+    "Factory/Exam Sport"
 ]
 }
